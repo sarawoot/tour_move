@@ -1,16 +1,21 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
-//= require jquery
+//= require front-end/js/jquery-1.11.3.min
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+// = require turbolinks
+//= require front-end/js/jquery-migrate-1.2.1.min
+//= require bootstrap-sprockets
+//= require front-end/js/jquery.waypoints.min
+//= require front-end/js/jquery.easing.1.3
+//= require front-end/js/SmoothScroll.min
+//= require front-end/js/jquery.slicknav.min
+//= require front-end/js/jquery.placeholder.min
+//= require front-end/js/instagram.min
+//= require front-end/js/spin.min
+//= require front-end/js/jquery.introLoader.min
+//= require front-end/js/select2.full
+//= require front-end/js/jquery.responsivegrid
+//= require front-end/js/ion.rangeSlider.min
+//= require front-end/js/readmore.min
+//= require front-end/js/slick.min
+//= require front-end/js/validator.min
+//= require front-end/js/jquery.raty
+//= require front_end

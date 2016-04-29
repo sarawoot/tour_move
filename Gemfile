@@ -57,5 +57,7 @@ gem 'bootstrap-sass-extras', '~> 0.0.7'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'js-routes', '~> 1.2', '>= 1.2.5'
+gem "font-awesome-rails"
+gem 'ionicons-rails'
 
 
