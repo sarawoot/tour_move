@@ -62,8 +62,6 @@ ready = ->
       )
     )
 
-
- 
   # Placeholder
   $("input, textarea").placeholder()
   
@@ -81,6 +79,17 @@ ready = ->
     $('html, body').animate({ scrollTop:0 }, '800')
     false
   )
+
+  $(".navbar-arrow > ul > li").has("ul").children("a").append("<i class='arrow-indicator fa fa-angle-down'></i>");
+  $(".navbar-arrow ul ul > li").has("ul").children("a").append("<i class='arrow-indicator fa fa-angle-right'></i>");
+
+  # select2 - custom select
+  $(".select2-single").select2
+    allowClear: true
+  $(".select2-no-search").select2
+    dropdownCssClass: 'select2-no-search'
+    allowClear: true
+  $(".select2-multi").select2;
   
   true
 

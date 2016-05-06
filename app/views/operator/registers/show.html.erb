@@ -1,0 +1,61 @@
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-11 col-md-12">
+              <div class="confirmation-wrapper">
+                <div class="payment-success">
+                  <div class="icon">
+                    <i class="pe-7s-check text-success"></i>
+                  </div>
+                  <div class="content">
+                    <h2 class="heading uppercase mt-0 text-success">ขอบคุณครับกรุณาลองอีเมลตอบกลับ</h2>
+                  </div>
+                </div>
+                <div class="confirmation-content">
+                  <div class="section-title text-left">
+                    <h4>ข้อมูลทั่วไป</h4>
+                  </div>
+                  <ul class="book-sum-list">
+                    <li><span class="font600">ชื่อผู้ติดต่อหลัก: </span><%= @register.contact_name %></li>
+                    <li><span class="font600">ตำแหน่ง: </span><%= @register.role_contact.humanize %></li>
+                    <li><span class="font600">อีเมล: </span><%= @register.email %></li>
+                    <li><span class="font600">ชื่อบริษัทภาษาอังกฤษ: </span> <%= @register.company_name_en %></li>
+
+                  </ul>
+                </div>
+                <div class="confirmation-content">
+                  <div class="section-title text-left">
+                    <h4>รายละเอียดเพิ่มเติม</h4>
+                  </div>
+                  <ul class="book-sum-list">
+                    <li>
+                      <span class="font600">ชื่อบริษัทภาษาไทย: </span> 
+                      <%= @register.company_name_local %>
+                    </li>
+                    <li>
+                      <span class="font600">ประเภท: </span> 
+                      <%= @register.business_type.name %>
+                    </li>
+                    <li>
+                      <span class="font600">เบอร์โทรศัพท์หลัก: </span>
+                      <%=  @register.main_phone_no.present? ? @register.main_phone_no : raw('&nbsp;')  %>
+                    </li>
+                    <li>
+                      <span class="font600">เว็บไซต์บริษัททัวร์: </span> 
+                      <%= @register.company_website.present? ? @register.company_website : raw('&nbsp;') %>
+                    </li>
+                    <li>
+                      <span class="font600">หมายเลขอนุญาต: </span> 
+                      <%= @register.license_number.present? ? @register.license_number : raw('&nbsp;') %>
+                    </li>
+                    <li>
+                      <span class="font600">เอกสารใบอนุญาต: </span> 
+                      <%= link_to 'ลิงค์', @register.license_attachment_url.present? ? @register.license_attachment_url : raw('#'), target: '_blank' %>
+                    </li>
+                  </ul>
+                </div>
+                <!-- <button class="btn btn-primary"><i class="fa fa-print"></i> Print</button> -->
+                <div style="margin-bottom: 50px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>

@@ -21,21 +21,6 @@
                   <div class="navbar-mini">
                     <ul class="clearfix">
                       
-                      <li class="dropdown bt-dropdown-click visible-xs">
-                        <a id="currncy-language-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                          <i class="fa fa-cog"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="language-dropdown">
-                          <li><a href="#"><i class="ion-social-usd"></i> Dollar</a></li>
-                          <li><a href="#"><i class="ion-social-euro"></i> Europe</a></li>
-                          <li><a href="#"><i class="ion-social-yen"></i> Yen</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">English</a></li>
-                          <li><a href="#">France</a></li>
-                          <li><a href="#">Japanese</a></li>
-                        </ul>
-                      </li>
-                      
                       <li class="user-action">
                         <a data-toggle="modal" href="#loginModal" class="btn">Sign up/in</a>
                       </li>
@@ -60,7 +45,12 @@
               <div class="col-sm-9">
                 <div id="navbar" class="collapse navbar-collapse navbar-arrow">
                   <ul class="nav navbar-nav" id="responsive-menu">
-                    <li><%= link_to "Home", root_path, 'data-no-turbolink' => true %></li>
+                    <li><%= link_to 'หน้าแรก', root_path, 'data-no-turbolink' => true %></li>
+                    <li><%= link_to 'บริษัททัวร์', '#', 'data-no-turbolink' => true %></a>
+                      <ul>
+                        <li><%= link_to 'สมัคร', new_operator_register_path, 'data-no-turbolink' => true %></li>
+                      </ul>
+                    </li>
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>

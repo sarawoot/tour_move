@@ -1,0 +1,75 @@
+<div class="page-title" style="background-image:url('<%= asset_path('front-end/images/hero-header/breadcrumb.jpg') %>');">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+        <h1 class="hero-title">สมัครบริษัททัวร์</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-9" role="main">
+        <div class="payment-container">
+          <%= render partial: 'layouts/error_form', locals: {model: @tour_operator_register}  %>
+          <%=  simple_form_for @tour_operator_register, url: operator_registers_path, method: 'post' do |f| %>   
+            <!-- General Info -->
+            <div class="payment-box">
+              <div class="payment-header clearfix">
+                <div class="number">1</div>
+                <h5 class="heading mt-0">ข้อมูลทั่วไป</h5>
+              </div>
+              <div class="payment-content">
+                <%=  f.input :contact_name, wrapper: :operator_register, label: 'ชื่อผู้ติดต่อหลัก:' %>
+                <%=  f.input :role_contact,
+                             label: 'ตำแหน่ง:',
+                             wrapper: :operator_register,
+                             collection: TourOperatorRegister.
+                                            role_contacts.keys.
+                                            collect{|k| [k.humanize, k] },
+                             input_html: { 
+                              class: 'select2-no-search',
+                              data: { placeholder: 'ตำแหน่ง' } } %>
+                <%=  f.input :email, wrapper: :operator_register, label: 'อีเมล:', as: 'email' %>
+                <%=  f.input :company_name_en,
+                             wrapper: :operator_register,
+                             label: 'ชื่อบริษัท (กรุณาพิมพ์ตัวอักษรภาษาอังกฤษ):' %>
+              </div>
+            </div>
+            <!-- End General Info -->
+            <!-- Detail Info -->
+            <div class="payment-box">
+              <div class="payment-header clearfix">
+                <div class="number">2</div>
+                <h5 class="heading mt-0">รายละเอียดเพิ่มเติม</h5>
+              </div>
+              <div class="payment-content">
+                <%=  f.input :company_name_local, wrapper: :operator_register, label: 'ชื่อบริษัท (กรุณาพิมพ์ตัวอักษรภาษาไทย):' %>
+                <%= f.association :business_type,
+                                  wrapper: :operator_register,
+                                  label: 'ประเภท',
+                                  input_html: {
+                                    class: 'select2-no-search',
+                                    data: { placeholder: 'ประเภท' }
+                                  }  %>
+                <%=  f.input :main_phone_no, wrapper: :operator_register, label: 'เบอร์โทรศัพท์หลัก:' %>
+                <%=  f.input :company_website, wrapper: :operator_register, label: 'เว็บไซต์บริษัททัวร์:' %>
+                <%=  f.input :license_number, wrapper: :operator_register, label: 'หมายเลขอนุญาต:' %>
+                <%=  f.input :license_attachment, wrapper: :operator_register, label: 'เอกสารใบอนุญาต:', as: 'file' %>
+              </div>
+            </div>            
+            <!-- End Detail Info -->
+          
+            <div class="row mt-20">
+              <div class="col-sm-8 col-md-6">
+                <button class="btn btn-primary">บันทึก</button>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
