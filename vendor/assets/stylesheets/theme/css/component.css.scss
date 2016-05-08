@@ -2351,7 +2351,7 @@ input[type='checkbox']:checked + label:before {
 /* Slider */
 
 .slick-loading .slick-list {
-    background: #fff image-url('front-end/css/images/slick-loader.gif') center center no-repeat
+    background: #fff image-url('theme/css/images/slick-loader.gif') center center no-repeat
 }
 
 
@@ -3557,7 +3557,7 @@ body.introLoader_preventScroll {
 /* *************************************************** */
 
 .introLoader.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-simple_light.gif');
+    background-image: image-url('theme/css/spinners/circle-simple_light.gif');
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -3581,61 +3581,61 @@ body.introLoader_preventScroll {
 }
 
 .theme-dark.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-simple_dark.gif');
+    background-image: image-url('theme/css/spinners/circle-simple_dark.gif');
     background-color: #333333;
 }
 
 .theme-ocean.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-simple_ocean.gif');
+    background-image: image-url('theme/css/spinners/circle-simple_ocean.gif');
     background-color: #164761;
 }
 
 .theme-forest.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-simple_forest.gif');
+    background-image: image-url('theme/css/spinners/circle-simple_forest.gif');
     background-color: #1f3608;
 }
 
 .theme-fluoGreen.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-simple_fluoGreen.gif');
+    background-image: image-url('theme/css/spinners/circle-simple_fluoGreen.gif');
     background-color: #67de0f;
 }
 
 .theme-fluoYellow.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-simple_fluoYellow.gif');
+    background-image: image-url('theme/css/spinners/circle-simple_fluoYellow.gif');
     background-color: #dcff1b;
 }
 
 .theme-fluoMagenta.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-simple_fluoMagenta.gif');
+    background-image: image-url('theme/css/spinners/circle-simple_fluoMagenta.gif');
     background-color: #ff1bff;
 }
 
 .theme-light.bubble.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-bub_light.gif');
+    background-image: image-url('theme/css/spinners/circle-bub_light.gif');
 }
 
 .theme-dark.bubble.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-bub_dark.gif');
+    background-image: image-url('theme/css/spinners/circle-bub_dark.gif');
 }
 
 .theme-ocean.bubble.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-bub_ocean.gif');
+    background-image: image-url('theme/css/spinners/circle-bub_ocean.gif');
 }
 
 .theme-forest.bubble.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-bub_forest.gif');
+    background-image: image-url('theme/css/spinners/circle-bub_forest.gif');
 }
 
 .theme-fluoGreen.bubble.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-bub_fluoGreen.gif');
+    background-image: image-url('theme/css/spinners/circle-bub_fluoGreen.gif');
 }
 
 .theme-fluoYellow.bubble.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-bub_fluoYellow.gif');
+    background-image: image-url('theme/css/spinners/circle-bub_fluoYellow.gif');
 }
 
 .theme-fluoMagenta.bubble.gifLoader .gifLoaderInner {
-    background-image: image-url('front-end/css/spinners/circle-bub_fluoMagenta.gif');
+    background-image: image-url('theme/css/spinners/circle-bub_fluoMagenta.gif');
 }
 
 
@@ -4340,7 +4340,7 @@ html[xmlns] .slides {
 }
 
 .flexslider {
-    background: #fff image-url('front-end/css/images/flex-loader.gif') no-repeat center center;
+    background: #fff image-url('theme/css/images/flex-loader.gif') no-repeat center center;
     position: relative;
     zoom: 1;
     border: none;
@@ -4446,7 +4446,7 @@ html[xmlns] .slides {
     margin-left: -250px;
     margin-top: -260px;
     text-indent: -9999px;
-    background: image-url('front-end/images/logo.png') no-repeat 0 0
+    background: image-url('theme/images/logo.png') no-repeat 0 0
 }
 
 .top_box .btn_pop {
@@ -4457,7 +4457,7 @@ html[xmlns] .slides {
     height: 128px;
     margin-left: -64px;
     margin-top: -24px;
-    background: image-url('front-end/css/images/btn_pop.png') no-repeat 0 0;
+    background: image-url('theme/css/images/btn_pop.png') no-repeat 0 0;
     cursor: pointer
 }
 
@@ -4467,7 +4467,7 @@ html[xmlns] .slides {
     top: 20px;
     width: 32px;
     height: 32px;
-    background: image-url('front-end/css/images/volume.png') no-repeat;
+    background: image-url('theme/css/images/volume.png') no-repeat;
     cursor: pointer
 }
 
@@ -4485,7 +4485,7 @@ html[xmlns] .slides {
     height: 100%;
     left: 0;
     top: 0;
-    background: image-url('front-end/css/images/bg.png');
+    background: image-url('theme/css/images/bg.png');
     z-index: -9
 }
 
@@ -4544,7 +4544,7 @@ html[xmlns] .slides {
     top: 0;
     width: 40px;
     height: 40px;
-    background: image-url('front-end/css/images/close.png') no-repeat 0 0;
+    background: image-url('theme/css/images/close.png') no-repeat 0 0;
     cursor: pointer
 }
 
@@ -4555,7 +4555,7 @@ html[xmlns] .slides {
     height: 100%;
     left: 0;
     top: 0;
-    background: image-url('front-end/css/images/bg_pop.png');
+    background: image-url('theme/css/images/bg_pop.png');
     z-index: 9
 }
 

@@ -1,4 +1,5 @@
 class Operator::RegistersController < ApplicationController
+  layout "front_end"
   def new
     @tour_operator_register = TourOperatorRegister.new
   end

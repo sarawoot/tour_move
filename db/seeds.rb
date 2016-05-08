@@ -8,3 +8,6 @@
 
 BusinessType.create(name: 'Tour Operation')
 BusinessType.create(name: 'Tour Agency')
+
+User.create(email: 'admin@admin.com', password: '12345678', password_confirmation: '1234', role: 'admin')
+User.create(email: 'user@user.com', password: '12345678', password_confirmation: '1234', role: 'user')

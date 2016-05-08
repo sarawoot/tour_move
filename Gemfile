@@ -60,5 +60,6 @@ gem 'js-routes', '~> 1.2', '>= 1.2.5'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.2.0'
 gem 'ionicons-rails', '~> 2.0'
 gem 'carrierwave', '~> 0.10.0'
-
+gem 'pundit', '~> 1.1'
+gem 'growlyflash', '~> 0.8.5'
 

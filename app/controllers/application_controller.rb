@@ -1,5 +1,9 @@
 class ApplicationController < ActionController::Base
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
+  include Pundit
   protect_from_forgery with: :exception
+  use_growlyflash
+
+  rescue_from Pundit::NotAuthorizedError do |exception|
+    redirect_to root_url, notice: 'ขออภัยคุณไม่มีสิทธิ์ใช้งาน'#exception.message#, status: :forbidden #HTTP 403
+  end
 end

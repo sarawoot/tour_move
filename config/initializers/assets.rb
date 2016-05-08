@@ -10,24 +10,24 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 # JS
-Rails.application.config.assets.precompile += %w( home.js )
+Rails.application.config.assets.precompile += %w( front_end/home.js )
 # Style Sheet
-Rails.application.config.assets.precompile += %w( front-end/css/style.css )
+Rails.application.config.assets.precompile += %w( theme/css/style.css )
 # Image
-Rails.application.config.assets.precompile += %w( front-end/images/*.png )
-Rails.application.config.assets.precompile += %w( front-end/images/*.jpg )
-Rails.application.config.assets.precompile += %w( front-end/images/tour-package/*.jpg )
-Rails.application.config.assets.precompile += %w( front-end/images/man/*.jpg )
-Rails.application.config.assets.precompile += %w( front-end/images/hero-header/*.jpg )
-Rails.application.config.assets.precompile += %w( front-end/images/destination-grid/*.jpg )
-Rails.application.config.assets.precompile += %w( front-end/images/destination-grid/*.jpg )
-Rails.application.config.assets.precompile += %w( front-end/css/spinners/*.gif )
-Rails.application.config.assets.precompile += %w( front-end/images/raty/*.png )
+Rails.application.config.assets.precompile += %w( theme/images/*.png )
+Rails.application.config.assets.precompile += %w( theme/images/*.jpg )
+Rails.application.config.assets.precompile += %w( theme/images/tour-package/*.jpg )
+Rails.application.config.assets.precompile += %w( theme/images/man/*.jpg )
+Rails.application.config.assets.precompile += %w( theme/images/hero-header/*.jpg )
+Rails.application.config.assets.precompile += %w( theme/images/destination-grid/*.jpg )
+Rails.application.config.assets.precompile += %w( theme/images/destination-grid/*.jpg )
+Rails.application.config.assets.precompile += %w( theme/css/spinners/*.gif )
+Rails.application.config.assets.precompile += %w( theme/images/raty/*.png )
 # Fonts
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets', 'front-end', 'icons', 'pe-icon-7-stroke', 'fonts')  
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets', 'front-end', 'icons', 'simple-line-icons', 'fonts')  
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets', 'front-end', 'icons', 'themify-icons', 'fonts')  
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets', 'front-end', 'icons', 'rivolicons', 'fonts')  
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets', 'theme', 'icons', 'pe-icon-7-stroke', 'fonts')  
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets', 'theme', 'icons', 'simple-line-icons', 'fonts')  
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets', 'theme', 'icons', 'themify-icons', 'fonts')  
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets', 'theme', 'icons', 'rivolicons', 'fonts')  
 Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 
 

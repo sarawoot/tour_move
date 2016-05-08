@@ -89,8 +89,17 @@ ready = ->
   $(".select2-no-search").select2
     dropdownCssClass: 'select2-no-search'
     allowClear: true
-  $(".select2-multi").select2;
-  
+  $(".select2-multi").select2
+
+  # Boostrap alert
+  Growlyflash.defaults = $.extend on, Growlyflash.defaults,
+    align:   'center'
+    delay:   10000 
+    title:   no
+
+  Growlyflash.helpers = $.extend on, Growlyflash.helpers,
+    title: (s) -> ""
+
   true
 
 $(document).ready ready 
