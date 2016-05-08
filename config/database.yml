@@ -6,17 +6,17 @@ default: &default
 development:
   <<: *default
   database: tour_move_development
-  username: postgres
-  password: 
+  username: tour_move
+  password: 1234
 
 test:
   <<: *default
   database: tour_move_test
-  username: postgres
-  password: 
+  username: tour_move
+  password: 1234
 
 production:
   <<: *default
   database: tour_move
   username: tour_move
-  password: <%= ENV['TOUR_MOVE_DATABASE_PASSWORD'] %>
+  password: 1234 # <%= ENV['TOUR_MOVE_DATABASE_PASSWORD'] %>
