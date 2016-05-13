@@ -20,6 +20,7 @@ class Admin::ScreenOperatorController < ApplicationController
     user.password_confirmation = password
     respond_to do |format|
       if user.save
+        user.operator!
         @register.approve!
         ScreenOperator.approve(@register, password).deliver
         format.html { redirect_to admin_screen_operator_path(@register),

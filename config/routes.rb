@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   end
   # Operator
   namespace :operator do
+    root to: 'home#index'
     resources :registers, only: [:new, :create, :show]
   end
 

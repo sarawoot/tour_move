@@ -16,6 +16,8 @@ class ApplicationController < ActionController::Base
         admin_root_url
       elsif resource.user?
         root_url
+      elsif resource.operator?
+        operator_root_url
       end
     else
       super
@@ -24,5 +26,9 @@ class ApplicationController < ActionController::Base
 
   def authorize_admin?
     authorize :admin, :role_admin?
+  end
+
+  def authorize_operator?
+    authorize :operator, :role_operator?
   end
 end
