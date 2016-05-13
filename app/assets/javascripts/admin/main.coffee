@@ -39,6 +39,29 @@ ready = ->
     allowParentLinks: true
     label: ''
 
+  # Sign-in Modal
+  $formLogin = $('#login-form');
+  $formLost = $('#lost-form');
+  $formRegister = $('#register-form');
+  $divForms = $('#modal-login-form-wrapper');
+  $modalAnimateTime = 300;
+
+  $('#login_register_btn').on("click", -> modalAnimate($formLogin, $formRegister) )
+  $('#register_login_btn').on("click", -> modalAnimate($formRegister, $formLogin) )
+  $('#login_lost_btn').on("click", -> modalAnimate($formLogin, $formLost) )
+  $('#lost_login_btn').on("click", -> modalAnimate($formLost, $formLogin) )
+  $('#lost_register_btn').on("click", -> modalAnimate($formLost, $formRegister) )
+
+  modalAnimate = ($oldForm, $newForm) ->
+    $oldH = $oldForm.height()
+    $newH = $newForm.height()
+    $divForms.css("height",$oldH)
+    $oldForm.fadeToggle($modalAnimateTime, ->
+      $divForms.animate({height: $newH}, $modalAnimateTime, ->
+        $newForm.fadeToggle($modalAnimateTime)
+      )
+    )
+
   # Placeholder
   $("input, textarea").placeholder()
   
@@ -76,7 +99,9 @@ ready = ->
 
   Growlyflash.helpers = $.extend on, Growlyflash.helpers,
     title: (s) -> ""
+
   
+
   true
 
 $(document).ready ready 

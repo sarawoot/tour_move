@@ -15,7 +15,8 @@ class Operator::RegistersController < ApplicationController
   end
 
   def show
-    @register = TourOperatorRegister.select("tour_operator_registers.*, business_types.name").joins(:business_type).find(params[:id])
+    @register = TourOperatorRegister.select("tour_operator_registers.*, business_types.name").
+                                     joins(:business_type).find(params[:id])
   end
 
   private

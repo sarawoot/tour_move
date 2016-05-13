@@ -1,0 +1,33 @@
+<div class="page-title" style="background-image:url('<%= asset_path('theme/images/hero-header/breadcrumb.jpg') %>');">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+        <h1 class="hero-title">ตรวจสอบบริษัททัวร์</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-wrapper">
+  <div class="container">
+      <%= paginate @tour_operator_registers, :outer_window => 3 %>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>ชื่อบริษัททัวร์</th>
+            <th>สถานะ</th>
+            <th>#</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @tour_operator_registers.each {|t| %>
+          <tr>
+            <td><%= t.company_name_en %></td>
+            <td><%= t.status.humanize %></td>
+            <td><%= link_to 'Show', admin_screen_operator_path(t), 'data-no-turbolink': true  %></td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+      <%= paginate @tour_operator_registers, :outer_window => 3 %>
+  </div>
+</div>

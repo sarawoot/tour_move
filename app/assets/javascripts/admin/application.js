@@ -18,5 +18,5 @@
 //= require theme/js/slick.min
 //= require theme/js/validator.min
 //= require theme/js/jquery.raty
-//= require growlyflash
 //= require admin/main
+//= require growlyflash

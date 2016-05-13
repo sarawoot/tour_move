@@ -41,7 +41,7 @@
                     </li>
                     <li>
                       <span class="font600">เว็บไซต์บริษัททัวร์: </span> 
-                      <%= @register.company_website.present? ? @register.company_website : raw('&nbsp;') %>
+                      <%= link_to 'ลิงค์', @register.company_website.present? ? @register.company_website : '#' %>
                     </li>
                     <li>
                       <span class="font600">หมายเลขอนุญาต: </span> 

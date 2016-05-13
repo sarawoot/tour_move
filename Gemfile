@@ -50,6 +50,8 @@ group :development do
   gem 'pry-byebug', '~> 3.3'
   gem 'hirb', '~> 0.7.3'
   gem 'awesome_print', '~> 1.6', '>= 1.6.1'
+  gem 'mailcatcher', '~> 0.6.1'
+  gem 'meta_request', '~> 0.3.4'
 end
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
@@ -62,4 +64,5 @@ gem 'ionicons-rails', '~> 2.0'
 gem 'carrierwave', '~> 0.10.0'
 gem 'pundit', '~> 1.1'
 gem 'growlyflash', '~> 0.8.5'
+gem 'kaminari', '~> 0.16.3'
 

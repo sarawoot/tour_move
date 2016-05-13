@@ -1,6 +1,7 @@
 class BusinessTypesController < ApplicationController
   before_action :set_business_type, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
+  before_action :authorize_admin?
   # GET /business_types
   # GET /business_types.json
   def index
